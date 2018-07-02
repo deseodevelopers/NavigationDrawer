@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/work"
+            android:icon="@drawable/briefcase"
+            android:title="@string/work" />
+        <item
+            android:id="@+id/calendar"
+            android:icon="@drawable/calendar"
+            android:title="@string/calendar" />
+    </group>
+
+    <menu>
+        <item
+            android:id="@+id/location"
+            android:icon="@drawable/ic_my_location_black_24dp"
+            android:title="@string/location" />
+    </menu>
+        <item
+            android:id="@+id/inbox"
+            android:icon="@drawable/inbox_multiple"
+            android:title="@string/inbox" />
+        <item
+            android:id="@+id/camera"
+            android:icon="@drawable/camera"
+            android:title="@string/camera" />
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="@string/dashboard" />
+        <item
+            android:id="@+id/creditcard"
+            android:icon="@drawable/credit_card_settings"
+            android:title="@string/creditcard" />
+        <item
+            android:id="@+id/tools"
+            android:icon="@drawable/wrench"
+            android:title="@string/tools" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/info"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="@string/info" />
+
+</menu>
+
