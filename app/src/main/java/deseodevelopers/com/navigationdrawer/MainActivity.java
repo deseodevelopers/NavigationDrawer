@@ -1,16 +1,18 @@
 package deseodevelopers.com.navigationdrawer;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.widget.Toolbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toolbar;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private static final String TAG = "";
     private DrawerLayout mDrawerLayout;
@@ -78,13 +80,102 @@ public class MainActivity extends AppCompatActivity {
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 return true;
+
+            case R.id.home:
+                return true;
+
+            case R.id.work:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.calendar:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.location:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.camera:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.dashboard:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.creditcard:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.tools:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.settings:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.info:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
         }
+        //Close Navigation Drawer
+        mDrawerLayout.closeDrawer(GravityCompat.START);
+        // GENERIC CODE return true;
+        // The user's action was not recognized.
+        // Inovoke the superclass to handle it.
         return super.onOptionsItemSelected(item);
     }
 
-    private void setSupportActionBar(Toolbar toolbar) {
-    }
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
 
+            case R.id.home:
+                return true;
+
+            case R.id.work:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.calendar:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.location:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.camera:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.dashboard:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.creditcard:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.tools:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.settings:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+
+            case R.id.info:
+                //mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+        }
+        return true;
+    }
 
     @Override
     public void onStart() {
@@ -115,5 +206,6 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d(TAG, "onDestroy() called");
     }
+
 
 }

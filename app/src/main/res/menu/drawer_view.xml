@@ -1,55 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/home"
             android:icon="@drawable/ic_home_black_24dp"
-            android:title="@string/home" />
+            android:title="@string/home"
+            app:showAsAction="ifRoom"/>
         <item
             android:id="@+id/work"
             android:icon="@drawable/briefcase"
-            android:title="@string/work" />
+            android:title="@string/work"
+            app:showAsAction="ifRoom"/>
         <item
             android:id="@+id/calendar"
             android:icon="@drawable/calendar"
-            android:title="@string/calendar" />
+            android:title="@string/calendar"
+            app:showAsAction="ifRoom"/>
     </group>
 
-    <menu>
         <item
             android:id="@+id/location"
             android:icon="@drawable/ic_my_location_black_24dp"
-            android:title="@string/location" />
-    </menu>
+            android:title="@string/location"
+            app:showAsAction="ifRoom"/>
         <item
             android:id="@+id/inbox"
             android:icon="@drawable/inbox_multiple"
-            android:title="@string/inbox" />
+            android:title="@string/inbox"
+            app:showAsAction="ifRoom"/>
         <item
             android:id="@+id/camera"
             android:icon="@drawable/camera"
-            android:title="@string/camera" />
+            android:title="@string/camera"
+            app:showAsAction="ifRoom"/>
         <item
             android:id="@+id/dashboard"
             android:icon="@drawable/ic_dashboard_black_24dp"
-            android:title="@string/dashboard" />
+            android:title="@string/dashboard"
+            app:showAsAction="ifRoom"/>
         <item
             android:id="@+id/creditcard"
             android:icon="@drawable/credit_card_settings"
-            android:title="@string/creditcard" />
+            android:title="@string/creditcard"
+            app:showAsAction="ifRoom"/>
         <item
             android:id="@+id/tools"
             android:icon="@drawable/wrench"
-            android:title="@string/tools" />
+            android:title="@string/tools"
+            app:showAsAction="ifRoom"/>
         <item
             android:id="@+id/settings"
             android:icon="@drawable/settings"
-            android:title="@string/settings" />
+            android:title="@string/settings"
+            app:showAsAction="never"/>
         <item
             android:id="@+id/info"
             android:icon="@drawable/ic_info_black_24dp"
-            android:title="@string/info" />
+            android:title="@string/info"
+            app:showAsAction="ifRoom"/>
 
 </menu>
 
